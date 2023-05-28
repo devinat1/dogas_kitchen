@@ -1,4 +1,4 @@
-import ListMenu from "./ListMenu";
+import ListMenu from "./components/ListMenu";
 
 const MainPage = () => {
     return (

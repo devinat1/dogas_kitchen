@@ -1,18 +1,19 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
-import ListMenu from './ListMenu';
+import ListMenu from './components/ListMenu';
 import MainPage from './mainPage';
-import NotFound from './404';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
-  <BrowserRouter>
-    <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="*" element={<NotFound />} />
-    </Routes>
-  </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/item/:name" element={<ListMenu />} />
+          <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
