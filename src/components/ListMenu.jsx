@@ -10,7 +10,8 @@ function ListMenu() {
 
   if (name) {
     //FIXME This is technically a bit slow with O(N) search. Using a dictionary would speed things up in this case.
-    const foodItem = foodItems.find((item) => item.name === name);
+    const spacedName = name.replaceAll("_", " ");
+    const foodItem = foodItems.find((item) => item.name === spacedName);
 
     if (!foodItem) {
       return <NotFound />;
@@ -25,7 +26,7 @@ function ListMenu() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {foodItems.map((item) => (
           <div
-            onClick={() => navigate(`/item/${item.name}`)}
+            onClick={() => navigate(`/item/${item.name.replaceAll(" ", "_")}`)}
             key={item.id}
             className="bg-secondary p-4 rounded-lg shadow-lg flex flex-col justify-between hover:bg-primary hover:text-secondary cursor-pointer transition-all duration-200 ease-in-out transform hover:scale-105"
           >

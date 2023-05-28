@@ -4,10 +4,6 @@ function SelectedItem(props) {
   const { name, description, image, id } = props;
   const navigate = useNavigate();
 
-  const handleBackClick = () => {
-    navigate(-1);
-  };
-
   return (
     <div className="max-w-2xl mx-auto">
       <div className="mb-4 rounded-lg shadow-lg max-w-2xl">
@@ -21,7 +17,7 @@ function SelectedItem(props) {
       <p className="text-lg mb-4">{description}</p>
       <div className="flex justify-center">
         <button
-          onClick={handleBackClick}
+          onClick={() => navigate("/")}
           className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full"
         >
           Back
