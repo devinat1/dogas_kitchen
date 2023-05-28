@@ -1,6 +1,17 @@
 function SelectedItem(props) {
-  console.log(`Props passed down to SelectedItem: ${props}`);
-  return <div>Temp</div>;
+  const { name, description, image } = props;
+
+  return (
+    <div>
+      <li>
+        <ul>{name}</ul>
+        <ul>
+          <img src={image} alt={name} />
+        </ul>
+        <ul>{description}</ul>
+      </li>
+    </div>
+  );
 }
 
 export default SelectedItem;
