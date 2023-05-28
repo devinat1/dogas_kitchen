@@ -7,7 +7,7 @@ function SelectedItem(props) {
       <img
         src={image}
         alt={name}
-        className="mb-4 rounded-lg shadow-lg w-full h-auto"
+        className="mb-4 rounded-lg shadow-lg max-w-full h-auto border border-gray-300"
       />
       <p className="text-lg mb-4">{description}</p>
     </div>

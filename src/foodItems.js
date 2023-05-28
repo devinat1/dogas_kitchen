@@ -18,7 +18,7 @@ export const foodItems = [
   {
     id: 3,
     name: "Karnıyarık",
-    image: "https://www.wandercooks.com/wp-content/uploads/2020/09/karniyarik-turkish-stuffed-eggplant-3-1080x1620.jpg",
+    image: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-XIfpc-6NGCk%2FU4X9C5lfmdI%2FAAAAAAAADMo%2FnDnPhTBylaA%2Fs1600%2FDSC07038.JPG&f=1&nofb=1&ipt=f9b8d95a595a37abb6260d55a2cb4306f3c11bc32d1d1a1207614c871063f96a&ipo=images",
     description:
       "Karnıyarık is a classic Turkish dish made with eggplants that are partially slit open and stuffed with a flavorful filling of ground meat, onions, tomatoes, garlic, and spices. The stuffed eggplants are then baked until tender and served with rice or bread.",
     recipe: "TODO",
@@ -26,7 +26,7 @@ export const foodItems = [
   {
     id: 4,
     name: "Mercimek Çorbası",
-    image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F4fmKTA55xl8%2Fhqdefault.jpg&f=1&nofb=1&ipt=b0678e3a496211c4bdfad661f38de2251f747c0ab0c60e473e7d05a59b375489&ipo=images",
+    image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.CEubopqlTePNHV0JFZWiyAHaE8%26pid%3DApi&f=1&ipt=bb72b5a61301ad07d76c674ee66a134452bdb269ec9fea362853cad8bed94716&ipo=images",
     description:
       "Mercimek Çorbası is a hearty and comforting Turkish red lentil soup. It is made by simmering red lentils with onions, carrots, tomatoes, and various spices. The soup is often garnished with fresh herbs and served with a squeeze of lemon.",
     recipe: "TODO",
