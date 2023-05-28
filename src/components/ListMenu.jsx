@@ -20,18 +20,21 @@ function ListMenu() {
   }
 
   return (
-    <div>
-      <h1>List of Food</h1>
-      <ul>
-        {foodItems.map((foodItem) => (
-          <li
-            onClick={() => navigate(`/item/${foodItem.name}`)}
-            key={foodItem.id}
+    <div className="bg-tertiary p-4 rounded-lg shadow-lg">
+      <div className="text-2xl font-bold mb-4 text-primary">Menu</div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {foodItems.map((item) => (
+          <div
+            onClick={() => navigate(`/item/${item.name}`)}
+            key={item.id}
+            className="bg-secondary p-4 rounded-lg shadow-lg flex flex-col justify-between hover:bg-primary hover:text-secondary cursor-pointer transition-all duration-200 ease-in-out transform hover:scale-105"
           >
-            {foodItem.name}
-          </li>
+            <div className="text-lg font-bold mb-2">{item.name}</div>
+            <img src={item.image} alt={item.name} className="mb-2" />
+            <p className="text-gray-700">{item.description}</p>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
